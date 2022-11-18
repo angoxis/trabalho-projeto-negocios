@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='stile.css' )}}">
+    <title>Plano pm</title>
+</head>
+<body>
+
+<section class="component">
+  <div class="total">
+    <h3>Preço:</h3>
+    <p> 50$</p>
+  </div>
+  <div class="credit-card">
+    <h2>Pedido</h2>
+    <form action="cadastrar3" method="post">
+      <input type="text" placeholder="Nome" id="nome" name="nome" />
+        <input type="email" placeholder="email" id="email" name="email" />
+      <input type="number" placeholder="numero" id="numero" name="numero" />
+      <textarea placeholder="Ideia do Pedido" id="pedido" name="pedido" ></textarea>
+        <br>
+      <div class="line">
+        <select class="form-select" aria-label="Default select example" style="width: 600px height: 500px"  id="pagamento" name = "pagamento" >
+  <option selected>tipos de pagamento</option>
+  <option value="1">1-boleto</option>
+  <option value="2">2-credito</option>
+  <option value="3">3-debito</option>
+  <option value="4">4-pix</option>
+</select>
+      </div>
+      <button type="submit" class="valid-button">Enviar Pedido</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
